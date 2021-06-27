@@ -1,0 +1,14 @@
+
+[{shop_url}]
+
+New comment on your store blog.
+
+A comment has been submitted on article "{post_title}".
+
+Name : {name}
+
+Comment :
+{comment}
+
+
+{shop_name} [{shop_url}]
