@@ -394,10 +394,9 @@ class Psblog extends Module
 	 * @param $params
 	 * @return string
 	 */
-	public function hookDisplayBackOfficeHeader($params)
+	public function hookDisplayBackOfficeHeader()
 	{
-		$css = '<style type="text/css">.icon-AdminBlog:before{ content: "\f0e6";  }</style>"';
-		return $css;
+		return '<style type="text/css">.icon-AdminBlog:before{content: "\f0e6"}</style>';
 	}
 
 	/*
