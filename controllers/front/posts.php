@@ -123,7 +123,7 @@ class PsblogPostsModuleFrontController extends ModuleFrontController
 			$curr_meta_title = $this->context->smarty->getTemplateVars('meta_title');
 			$this->context->smarty->assign(
 				array(
-					'meta_title' => $curr_meta_title.' - '.$category->name,
+					'meta_title' => $curr_meta_title ? $curr_meta_title.' - '.$category->name : $category->name,
 					'meta_description' => $category->meta_description,
 					'meta_keywords' => $category->meta_keywords
 				)
@@ -148,7 +148,7 @@ class PsblogPostsModuleFrontController extends ModuleFrontController
 			$curr_meta_title = $this->context->smarty->getTemplateVars('meta_title');
 			$this->context->smarty->assign(
 				array(
-					'meta_title' => $curr_meta_title.' - '.$category->name,
+					'meta_title' => $curr_meta_title ? $curr_meta_title.' - '.$category->name : $category->name,
 					'meta_description' => $category->meta_description,
 					'meta_keywords' => $category->meta_keywords,
 					'post_category' => $category
@@ -347,7 +347,7 @@ class PsblogPostsModuleFrontController extends ModuleFrontController
 			$curr_meta_title = $this->context->smarty->getTemplateVars('meta_title');
 			$this->context->smarty->assign(
 				array(
-					'meta_title' => $curr_meta_title.' - '.$post->title,
+					'meta_title' => $curr_meta_title ? $curr_meta_title.' - '.$post->title : $post->title,
 					'meta_description' => $post->meta_description,
 					'meta_keywords' => $post->meta_keywords
 				)
